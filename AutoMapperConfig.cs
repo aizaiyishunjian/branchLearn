@@ -28,6 +28,7 @@ namespace IR46.WebHost.Infrastructure
             Register<Data_Sample,InputDtoEditSample>();
             Register<Data_TestScheme,InputDtoTestScheme>();
             Register<InputDtoDataAddSample, InputDtoEditSample>();
+            Register<Data_LoginRecords,DisplayDto>();
 
 
 

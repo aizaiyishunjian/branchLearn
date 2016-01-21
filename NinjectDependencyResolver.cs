@@ -103,7 +103,9 @@ namespace IR46.WebHost.Infrastructure
                 .To<DbMaitainSysCommandRepository<Data_TestScheme_Details>>();
 
 
-
+            //HotFix
+            _kernel.Bind<ICommandRepository<Data_TestScheme_Details>>()
+                .To<DbMaitainSysCommandRepository<Data_TestScheme_Details>>();        
 
             //---------------------------------------
 

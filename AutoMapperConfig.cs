@@ -28,6 +28,7 @@ namespace IR46.WebHost.Infrastructure
             Register<Data_Sample,InputDtoEditSample>();
             Register<Data_TestScheme,InputDtoTestScheme>();
             Register<InputDtoDataAddSample, InputDtoEditSample>();
+            Register<Data_TestResult,InputDtoTestResult>();
 
 
 
@@ -40,6 +41,7 @@ namespace IR46.WebHost.Infrastructure
             Mapper.CreateMap<Data_TestScheme, DispDtoTestScheme>();
             Mapper.CreateMap<Data_Sample, DispDtoTestScheme>();
             Mapper.CreateMap<Data_Sample,DispDtoShowDataSampleOfList>();
+            Mapper.CreateMap<Data_TestResult,DispDtoTestResult>();
 
             ////由于两个模型中均存在List类型，为防止转换过程中出错，特配置指定属性不进行转换
             //Mapper.CreateMap<DtoKuangJingModel, Sys_KJ>()

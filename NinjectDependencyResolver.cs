@@ -132,6 +132,9 @@ namespace IR46.WebHost.Infrastructure
             _kernel.Bind<ITestSchemeQueryService>().To<TestSchemeQueryService>();
             _kernel.Bind<ITestSchemeCommandService>().To<TestSchemeCommandService>();
 
+            //-Data_TestResult
+            _kernel.Bind<ITestResultQueryService>().To<TestResultQueryService>();
+            _kernel.Bind<ITestResultCommandService>().To<TestResultCommandService>();
 
             //---------------------------------------
 
